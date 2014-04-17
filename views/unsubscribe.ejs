@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>Holstee Newsletter Management</title>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/unsubscribe.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+
+      <div class="header">
+        <img class="logo" src="http://cdn.shopify.com/s/files/1/0031/5352/files/holstee_logo_2.png?4803=">
+        <h4>Newsletter Management</h4>
+      </div>
+
+      <form role="form" method="post">
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter email"<% if(typeof email !== "undefined" && email){ %> value="<%= email %>"<%}%>>
+        </div>
+
+        <fieldset>
+
+          <legend>Product Updates Newsletter</legend>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="newsletters[product]" value="weekly" checked>
+                <span class="duration">Once a week</span>
+                <span class="information">Be the first to learn about new products and special offers as soon as they launch, including your monthly dose of Mindful Matter!</span>
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="newsletters[product]" value="monthly">
+                <span class="duration">Once a month</span>
+                <span class="information">A monthly digest highlighting stories from Mindful Matter, our monthly online magazine about mindful living, as well as a few product and event highlights from the previous month all in one email!</span>
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="newsletters[product]" value="quarterly">
+                <span class="duration">Once a quarter</span>
+                <span class="information">A birds eye view of the activity at Holstee. Featuring our top products and content from the past few months, and what to expect in the next few!</span>
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="newsletters[product]" value="yearly">
+                <span class="duration">Once a year</span>
+                <span class="information">Don't forget about us! Once a year in november we will reach out with a recap of the years highlights, our learnings, and what we plan to do in the new year.</span>
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="newsletters[product]" value="never">
+              <span class="duration">Never</span>
+              <span class="information">We understand, people change. If there is anything you would like to have seen us do differently let us know, we would love to be the best we can be.</span>
+            </label>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Mindful Matter Newsletter</legend>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="newsletters[mindfulmatter]" value="monthly" checked>
+                <span class="duration">Once a month</span>
+                <span class="information">I'd like to recieve the Mindful Matter on a monthly basis.</span>
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="newsletters[mindfulmatter]" value="never">
+              <span class="duration">Never</span>
+              <span class="information">I'd like to be unsubscribed from Mindful Matter's Monthly Newsletter.</span>
+            </label>
+          </div>
+
+        </fieldset>
+
+        <div class="footer">
+          <button class="btn btn-holstee">Update settings</button>
+        <div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
