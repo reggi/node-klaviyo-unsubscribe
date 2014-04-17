@@ -21,6 +21,8 @@ var m = require("./middleware");
 app.get("/", m.renderUnsubscribe);
 app.use("/", m.validatePostUnsubscribe);
 app.post("/", m.requestKlaviyo);
+app.post("/", m.responseJson);
+app.use("/", m.responseJsonError);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
