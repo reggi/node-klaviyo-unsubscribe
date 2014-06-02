@@ -58,11 +58,6 @@ h4{
   font-weight:bold
 }
 
-.duration:after{
-  content:" - ";
-  color:#666
-}
-
 .information{
   color:#666
 }
