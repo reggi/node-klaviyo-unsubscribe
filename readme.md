@@ -71,6 +71,3 @@ Required body fields:
 * content["mindful matter"] (radio)
 	* yes
 	* no
-
-----
-
